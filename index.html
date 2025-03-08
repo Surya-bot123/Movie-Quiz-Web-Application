@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1> Movie Quiz</h1>
+
+        <!-- User Information Section -->
+        <div id="user-info">
+            <h2>Enter Your Details</h2>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-container">
+                <input type="text" id="rollnumber" placeholder="Enter your roll number" required>
+            </div>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz" style="display:none;">
+            <h2 id="question">Question goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+
+        <!-- Final Score Section -->
+        <div id="score" class="score" style="display:none;">
+            <h2>Your Final Score</h2>
+            <p id="score-text">0 / 0</p>
+            <div id="result-list"></div>
+            <p id="correct-answer-count"></p>
+            <p id="wrong-answer-count"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
